@@ -1,10 +1,10 @@
 
 const nts = require('express').Router();
-const { readAndAppend } = require('../helpers/fsHelp');
+const { readFromFile, readAndAppend } = require('../helpers/fsHelp');
 const uuid = require('../helpers/uuid');
 
 nts.get('/', (req, res) => 
-readFromFile('./db/feedback.json').then((data) => res.json(JSON.parse(data)))
+readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 );
 
 nts.post('/', (req, res) => {
