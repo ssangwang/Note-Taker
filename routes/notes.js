@@ -9,13 +9,13 @@ readFromFile('./db/feedback.json').then((data) => res.json(JSON.parse(data)))
 
 nts.post('/', (req, res) => {
 
-    const { id, title, description } = req.body;
+    const {title, text} = req.body;
 
-    if (id && title && description) {
+    if (title && text) {
         const newNote = {
-            id,
+            id: uuid(),
             title,
-            description,
+            text,
         };
 
         readAndAppend(newNote, './db/db.json' );
