@@ -7,7 +7,7 @@ This application was created for individuals who want to write down and save not
 ## Usage 
 Anyone can use this application to track their daily tasks, all the user has to do is visit the website, insert the title of their task, the description, and click the "Save" button! 
 
-![Getting Started](Module11-ss-2.PNG)
+![Getting Started](module11-ss-2.PNG)
 
 ## Installation 
 N/A
