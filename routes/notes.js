@@ -1,4 +1,3 @@
-
 const nts = require('express').Router();
 const { readFromFile, readAndAppend } = require('../helpers/fsHelp');
 const uuid = require('../helpers/uuid');
