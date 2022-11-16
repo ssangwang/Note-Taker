@@ -18,12 +18,12 @@ app.use('/api', api);
 app.use(express.static('public'));
 
 // GET Route for homepage
-app.get('/', (req, res) =>
+app.get('/api', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
 // GET Route for feedback page
-app.get('/notes', (req, res) =>
+app.get('/api/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
