@@ -3,6 +3,7 @@ const path = require('path');
 const api = require('./routes/index.js');
 const { clog } = require('./middleware/clog');
 
+const PORT = provess.env.PORT || 3001;
 
 const app = express();
 
