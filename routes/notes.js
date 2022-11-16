@@ -3,11 +3,11 @@ const nts = require('express').Router();
 const { readFromFile, readAndAppend } = require('../helpers/fsHelp');
 const uuid = require('../helpers/uuid');
 
-nts.get('/', (req, res) => 
+nts.get('/api', (req, res) => 
 readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 );
 
-nts.post('/', (req, res) => {
+nts.post('/api', (req, res) => {
 
     const {title, text} = req.body;
 
